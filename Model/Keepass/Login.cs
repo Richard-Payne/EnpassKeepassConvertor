@@ -4,10 +4,10 @@ namespace EnpassKeepassConverter.Model.Keepass
 {
     public class Login
     {
-        string Title { get; set; }
-        string Username { get; set; }
-        string Password { get; set; }
-        string Url { get; set; }
-        List<string> Notes { get; set; }
+        public string Title { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Url { get; set; }
+        public List<string> Notes { get; set; }
     }
 }

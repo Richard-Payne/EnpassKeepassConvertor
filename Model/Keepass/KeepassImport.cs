@@ -4,6 +4,11 @@ namespace EnpassKeepassConverter.Model.Keepass
 {
     public class KeepassImport 
     {
-        List<Login> Logins {get ;set;}
+        public KeepassImport()
+        {
+            Logins = new List<Login>();
+        }
+        
+        public List<Login> Logins {get ;set;}
     }
 }

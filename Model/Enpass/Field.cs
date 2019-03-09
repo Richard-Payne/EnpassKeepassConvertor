@@ -6,12 +6,12 @@ namespace EnpassKeepassConverter.Model.Enpass
     [JsonObject]
     internal class Field 
     {
-        string Label { get; set; }
-        int Order { get; set; } 
+        public string Label { get; set; }
+        public int Order { get; set; } 
         [JsonConverter(typeof(BoolConverter))]
-        bool Sensitive { get; set; } 
-        string Type { get; set; } 
-        int UID { get; set; } 
+        public bool Sensitive { get; set; } 
+        public string Type { get; set; } 
+        public int UID { get; set; } 
         [JsonProperty("updated_at")]
         public long UpdatedAt { get; set; }
         public string Value { get; set; }
